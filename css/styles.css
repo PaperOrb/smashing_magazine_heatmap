@@ -1,0 +1,190 @@
+body, html {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 76px;
+  border: 1px solid red;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+
+.nav-ul li {
+  border: 1px solid red;
+  padding: 14.4px;
+  width: 109px;
+  height: 38px;
+}
+
+.logo {
+  max-width: 227.85px;
+  height: 80%;
+  border: 1px solid red;
+  margin-left: 50px;
+}
+
+#search-bar {
+  width: 350px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  max-width: 1788px;
+}
+
+.latest-articles {
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+  height: 1008px;
+  margin: 125px auto;
+  padding: 0 16px;
+}
+
+.primary-article, .other-article {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 419px;
+  border: blue solid 1px;
+  margin-bottom: 65.1px;
+}
+
+.other-article {
+  height: 180px;
+}
+
+.primary-article-header, .other-article-header {
+  display: flex;
+  flex-direction: row;
+  height: 179px;
+  border: red solid 1px;
+}
+
+.author-pic {
+  height: 177px;
+  min-width: 177px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: red solid 1px;
+}
+
+.author, .article-date, .article-body, .continue-reading {
+  line-height: 23px;
+  font-weight: 700;
+  font-size: 21px;
+}
+
+.article-body {
+  margin: 30px 0;
+}
+
+.primary-article-title {
+  margin: 25px 0 13px 0;
+  font-size: 51px;
+  line-height: 1.2;
+  vertical-align: center;
+  border: red solid 1px;
+}
+
+.other-article-title {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 45px;
+  border: red solid 1px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 489px;
+  height: 875px;
+  margin: 125px;
+  font-size: 21px;
+  line-height: 25px;
+  border: red 1px solid;
+}
+
+.newsletter-pic {
+  width: 250px;
+  height: 250px;
+  border: red solid 1px;
+}
+
+.newsletter a {
+  width: 324px;
+  height: 55px;
+  border: red solid 1px;
+  padding: 13px 0;
+  text-align: center;
+  line-height: 1.15;
+}
+
+.newsletter h2 {
+  width: 423px;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-top: 40px;
+  border: 1px solid red;
+  line-height: 1.2;
+}
+
+.newsletter p {
+  line-height: 36.15px;
+  width: 423px;
+  margin: 31px 0;
+  border: 1px solid red;
+}
+
+.newsletter form {
+  width: 423px;
+  height: 67px;
+  margin-bottom: 13px;
+}
+
+.email-field {
+  height: 100%;
+  width: 66%;
+}
+
+.submit-btn {
+  height: 100%;
+  width: 32%;
+}
+
+.newsletter footer {
+  height: 36px;
+  font-size: 80%;
+  white-space: nowrap;
+  border: red 1px solid;
+}
+
+.latest-posts {
+  display: grid;
+}
