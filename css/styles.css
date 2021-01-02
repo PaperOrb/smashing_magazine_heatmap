@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   display: flex;
   flex-direction: column;
   max-width: 100%;
@@ -62,11 +63,12 @@ main {
   flex-direction: column;
   width: 950px;
   height: 1008px;
-  margin: 125px auto;
+  margin: 50px auto;
   padding: 0 16px;
 }
 
-.primary-article, .other-article {
+.primary-article,
+.other-article {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -79,7 +81,8 @@ main {
   height: 180px;
 }
 
-.primary-article-header, .other-article-header {
+.primary-article-header,
+.other-article-header {
   display: flex;
   flex-direction: row;
   height: 179px;
@@ -94,7 +97,10 @@ main {
   border: red solid 1px;
 }
 
-.author, .article-date, .article-body, .continue-reading {
+.author,
+.article-date,
+.article-body,
+.continue-reading {
   line-height: 23px;
   font-weight: 700;
   font-size: 21px;
@@ -125,7 +131,7 @@ main {
   align-items: center;
   width: 489px;
   height: 875px;
-  margin: 125px;
+  margin: 50px;
   font-size: 21px;
   line-height: 25px;
   border: red 1px solid;
@@ -185,6 +191,207 @@ main {
   border: red 1px solid;
 }
 
-.latest-posts {
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 52px;
+}
+
+.link-wrapper > div {
+  text-align: center;
+  border-bottom: 5px red solid;
+  height: 20px;
+}
+
+.grid-wrapper {
+  margin: 110px auto;
+}
+
+.grid-container-latest-posts {
   display: grid;
+  grid-template-columns: repeat(4, 331px);
+  grid-template-rows: repeat(3, 652px);
+  grid-gap: 100px 100px;
+}
+
+.grid-container-latest-posts h2 {
+  font-size: 24.6px;
+  margin-bottom: 30px;
+  border: red 1px solid;
+}
+
+.grid-container-latest-posts span {
+  padding: 10px 0;
+  height: 20px;
+}
+
+.grid-container-latest-posts header {
+  margin-bottom: 22px;
+  border: red 1px solid;
+}
+
+.post-preview {
+  font-size: 22px;
+  line-height: 24.95px;
+  border: red 1px solid;
+}
+
+.grid-container-latest-posts div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(46, 214, 12);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  flex: 1;
+}
+
+.button-wrapper button {
+  display: flex;
+  justify-content: center;
+  width: 18px;
+  height: 40px;
+  padding: 40px 51px;
+  border: red 1px solid;
+  font-size: 30px;
+  line-height: 35px;
+  justify-self: flex-end;
+}
+
+.blank-div {
+  border: 1px red solid;
+}
+
+.membership {
+  display: flex;
+  align-items: center;
+  grid-column: 1 / span 2;
+  border: 1px red solid;
+}
+
+.membership > div > img {
+  width: 250px;
+  height: 250px;
+  border: 1px red solid;
+}
+
+.membership h2 {
+  margin-top: 41px;
+}
+
+.membership p {
+  width: 675px;
+  margin: 41px auto;
+}
+
+.join-the-community {
+  width: 310px;
+  height: 76px;
+  font-size: 1.15em;
+  line-height: 36.15px;
+  font-weight: 700;
+}
+
+.already-have-acct {
+  font-size: 80%;
+  line-height: 36.15px;
+}
+
+.book {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1788px;
+  height: 1089px;
+  margin: 76px auto;
+  padding: 76px;
+  background: blue;
+}
+
+.book * {
+  text-align: center;
+  font-size: 26.2px;
+}
+
+.book header h2 {
+  width: 740px;
+  font-size: 51px;
+  line-height: 61.1px;
+  text-align: center;
+  margin: 33px 0;
+  letter-spacing: -0.3rem;
+  text-decoration: underline;
+}
+
+.book p {
+  width: 1090px;
+  margin-bottom: 33px;
+  line-height: 43px;
+}
+
+.toc-btn {
+  width: 401px;
+  height: 71px;
+  margin-bottom: 33px;
+}
+
+.encourage-clicks-img {
+  position: absolute;
+  bottom: 50px;
+  width: 920px;
+  height: 517px;
+  background: red;
+}
+
+.guides {
+  display: grid;
+  grid-template-columns: repeat(2, 705px);
+  grid-template-rows: repeat(3, 443px);
+  grid-gap: 100px 50px;
+  margin: 0 auto;
+}
+
+.js-frameworks {
+  width: 705px;
+  height: 443px;
+  border: 1px red solid;
+}
+
+.guides > div {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid red;
+  padding: 43px;
+  font-size: 21px;
+}
+
+.js-frameworks h2 {
+  font-size: 2.15em;
+  padding: 10px 0;
+  text-decoration: underline;
+}
+
+.js-frameworks p {
+  margin-top: 32px;
+}
+
+.js-frameworks button {
+  margin-top: 32px;
+  padding: 19.65px 0;
+  width: 454px;
+  height: 70px;
+}
+
+.another-newsletter, .web-performance {
+  width: 705px;
+  height: 898px;
+  margin: 0;
+}
+
+.link-wrapper {
+  padding: 22px 0 109px 0;
 }
