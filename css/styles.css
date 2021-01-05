@@ -6,6 +6,12 @@ html {
   height: 100%;
 }
 
+body,
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +23,7 @@ nav {
   flex-direction: row;
   width: 100%;
   height: 76px;
-  border: 1px solid red;
+  background: #2e2c2d;
   justify-content: space-around;
   align-items: center;
 }
@@ -27,11 +33,10 @@ nav {
   flex-direction: row;
   flex: 1;
   justify-content: space-around;
-  border: 1px solid red;
 }
 
 .nav-ul li {
-  border: 1px solid red;
+  background: #c5c6c8;
   padding: 14.4px;
   width: 109px;
   height: 38px;
@@ -40,17 +45,12 @@ nav {
 .logo {
   max-width: 227.85px;
   height: 80%;
-  border: 1px solid red;
+  background: #7d7e81;
   margin-left: 50px;
 }
 
 #search-bar {
   width: 350px;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
 }
 
 .container {
@@ -73,7 +73,6 @@ main {
   flex-direction: column;
   width: 100%;
   height: 419px;
-  border: blue solid 1px;
   margin-bottom: 65.1px;
 }
 
@@ -86,7 +85,6 @@ main {
   display: flex;
   flex-direction: row;
   height: 179px;
-  border: red solid 1px;
 }
 
 .author-pic {
@@ -94,7 +92,7 @@ main {
   min-width: 177px;
   margin-right: 20px;
   margin-bottom: 20px;
-  border: red solid 1px;
+  background: #7d7e81;
 }
 
 .author,
@@ -104,6 +102,7 @@ main {
   line-height: 23px;
   font-weight: 700;
   font-size: 21px;
+  background: #c5c6c8;
 }
 
 .article-body {
@@ -115,14 +114,14 @@ main {
   font-size: 51px;
   line-height: 1.2;
   vertical-align: center;
-  border: red solid 1px;
+  background: #7d7e81;
 }
 
 .other-article-title {
   font-size: 38px;
   font-weight: 500;
   line-height: 45px;
-  border: red solid 1px;
+  background: #7d7e81;
 }
 
 .newsletter {
@@ -134,20 +133,21 @@ main {
   margin: 50px;
   font-size: 21px;
   line-height: 25px;
-  border: red 1px solid;
+  background-color: #e7e7e8;
 }
 
 .newsletter-pic {
   width: 250px;
   height: 250px;
-  border: red solid 1px;
+  background: #535456;
 }
 
 .newsletter a {
   width: 324px;
   height: 55px;
-  border: red solid 1px;
+  background: #7d7e81;
   padding: 13px 0;
+  margin: 40px 0;
   text-align: center;
   line-height: 1.15;
 }
@@ -156,8 +156,7 @@ main {
   width: 423px;
   font-weight: 700;
   font-size: 1.5em;
-  margin-top: 40px;
-  border: 1px solid red;
+  background: #a3a5a8;
   line-height: 1.2;
 }
 
@@ -165,7 +164,7 @@ main {
   line-height: 36.15px;
   width: 423px;
   margin: 31px 0;
-  border: 1px solid red;
+  background: #c5c6c8;
 }
 
 .newsletter form {
@@ -177,24 +176,30 @@ main {
 .email-field {
   height: 100%;
   width: 66%;
+  background-color: #7d7e81;
 }
 
 .submit-btn {
   height: 100%;
   width: 32%;
+  background-color: #7d7e81;
 }
 
 .newsletter footer {
   height: 36px;
   font-size: 80%;
   white-space: nowrap;
-  border: red 1px solid;
+  background: #e7e7e8;
 }
 
 .link-wrapper {
   display: flex;
   justify-content: center;
   height: 52px;
+}
+
+.link-wrapper div {
+  background: #e7e7e8;
 }
 
 .link-wrapper > div {
@@ -204,7 +209,9 @@ main {
 }
 
 .grid-wrapper {
-  margin: 110px auto;
+  display: flex;
+  justify-content: center;
+  background: #e7e7e8;
 }
 
 .grid-container-latest-posts {
@@ -212,34 +219,38 @@ main {
   grid-template-columns: repeat(4, 331px);
   grid-template-rows: repeat(3, 652px);
   grid-gap: 100px 100px;
+  background: #e7e7e8;
 }
 
 .grid-container-latest-posts h2 {
   font-size: 24.6px;
   margin-bottom: 30px;
-  border: red 1px solid;
+  background: #7d7e81;
 }
 
 .grid-container-latest-posts span {
   padding: 10px 0;
   height: 20px;
+  background: #a3a5a8;
+}
+
+.grid-container-latest-posts time {
+  background: #a3a5a8;
 }
 
 .grid-container-latest-posts header {
   margin-bottom: 22px;
-  border: red 1px solid;
 }
 
 .post-preview {
   font-size: 22px;
   line-height: 24.95px;
-  border: red 1px solid;
+  background: #c5c6c8;
 }
 
 .grid-container-latest-posts div {
   display: flex;
   flex-direction: column;
-  border: 1px solid rgb(46, 214, 12);
 }
 
 .button-wrapper {
@@ -255,27 +266,21 @@ main {
   width: 18px;
   height: 40px;
   padding: 40px 51px;
-  border: red 1px solid;
   font-size: 30px;
   line-height: 35px;
   justify-self: flex-end;
-}
-
-.blank-div {
-  border: 1px red solid;
 }
 
 .membership {
   display: flex;
   align-items: center;
   grid-column: 1 / span 2;
-  border: 1px red solid;
 }
 
 .membership > div > img {
   width: 250px;
   height: 250px;
-  border: 1px red solid;
+  background: #535456;
 }
 
 .membership h2 {
@@ -285,6 +290,7 @@ main {
 .membership p {
   width: 675px;
   margin: 41px auto;
+  background-color: #c5c6c8;
 }
 
 .join-the-community {
@@ -298,6 +304,7 @@ main {
 .already-have-acct {
   font-size: 80%;
   line-height: 36.15px;
+  background-color: #e7e7e8;
 }
 
 .book {
@@ -305,11 +312,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1788px;
+  width: 100%;
   height: 1089px;
   margin: 76px auto;
   padding: 76px;
-  background: blue;
+  background: #2e2c2d;
+  color: white;
 }
 
 .book * {
@@ -317,7 +325,7 @@ main {
   font-size: 26.2px;
 }
 
-.book header h2 {
+.book > header > h2 {
   width: 740px;
   font-size: 51px;
   line-height: 61.1px;
@@ -325,18 +333,21 @@ main {
   margin: 33px 0;
   letter-spacing: -0.3rem;
   text-decoration: underline;
+  background-color: #535456;
 }
 
 .book p {
   width: 1090px;
   margin-bottom: 33px;
   line-height: 43px;
+  background: #a3a5a8;
 }
 
 .toc-btn {
   width: 401px;
   height: 71px;
   margin-bottom: 33px;
+  background: #7d7e81;
 }
 
 .encourage-clicks-img {
@@ -344,7 +355,7 @@ main {
   bottom: 50px;
   width: 920px;
   height: 517px;
-  background: red;
+  background: #535456;
 }
 
 .guides {
@@ -358,13 +369,15 @@ main {
 .js-frameworks {
   width: 705px;
   height: 443px;
-  border: 1px red solid;
+}
+
+.js-frameworks span {
+  background: #7d7e81;
 }
 
 .guides > div {
   display: flex;
   flex-direction: column;
-  border: 1px solid red;
   padding: 43px;
   font-size: 21px;
 }
@@ -373,10 +386,12 @@ main {
   font-size: 2.15em;
   padding: 10px 0;
   text-decoration: underline;
+  background: #535456;
 }
 
 .js-frameworks p {
   margin-top: 32px;
+  background: #a3a5a8;
 }
 
 .js-frameworks button {
@@ -384,6 +399,7 @@ main {
   padding: 19.65px 0;
   width: 454px;
   height: 70px;
+  background: #a3a5a8;
 }
 
 .another-newsletter,
@@ -400,11 +416,19 @@ main {
 .featured-books {
   position: relative;
   display: flex;
-  width: 1636px;
+  width: 100%;
   height: 402px;
   padding: 54.25px 76px;
-  background: red;
+  background: #2e2c2d;
   margin: 0 auto;
+}
+
+.featured-books span {
+  background: #a3a5a8;
+}
+
+.featured-books p {
+  background: #a3a5a8;
 }
 
 .featured-books > div {
@@ -437,7 +461,6 @@ main {
   display: grid;
   margin: 100px auto 0 auto;
   width: 1466px;
-  height: 276px;
   grid-template-columns: repeat(2, 733px);
   grid-template-rows: repeat(4, 371.5px);
   gap: 0 50px;
@@ -453,7 +476,7 @@ main {
   width: 242px;
   height: 242px;
   margin-right: 20px;
-  border: 1px red solid;
+  background: #535456;
 }
 
 .potw-desc {
@@ -462,7 +485,7 @@ main {
 }
 
 .potw-desc h4 {
-  border: 1px solid red;
+  background: #7d7e81;
   font-size: 21.7px;
   letter-spacing: 2px;
 }
@@ -471,10 +494,10 @@ main {
   margin: 30.7px 0;
   line-height: 36.15px;
   font-size: 21.7px;
-  border: 1px red solid;
+  background: #a3a5a8;
 }
 
-.article { 
+.article {
   display: flex;
   font-size: 21.33px;
   line-height: 24.53px;
@@ -497,15 +520,11 @@ main {
 }
 
 .article span {
-  border: 1px red solid;
+  background: #c5c6c8;
 }
 
 .article p {
-  border: 1px red solid;
-}
-
-.article img {
-  border: 1px red solid;
+  background: #c5c6c8;
 }
 
 .article h1 {
@@ -513,5 +532,68 @@ main {
   line-height: 43.2px;
   margin-bottom: 18px;
   font-weight: 700;
-  border: 1px red solid;
+  background: #7d7e81;
+}
+
+.browse {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  background: #2e2c2d;
+  color: white;
+  font-size: 27px;
+  margin-bottom: 100px;
+}
+
+.browse > header {
+  margin: 50px auto;
+  background: #7d7e81;
+}
+
+.browse > ul {
+  text-align: center;
+  margin: 0 auto;
+  width: 1498px;
+}
+
+.browse > ul > li {
+  background: #c5c6c8;
+  display: inline-block;
+  margin: 17px 10px;
+}
+
+.footer-rows {
+  display: flex;
+  flex-direction: row;
+  font-size: 17px;
+  line-height: 30px;
+  height: 300px;
+}
+
+.footer-rows div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.site-info {
+  background: #c5c6c8;
+}
+
+.footer-row-1 img {
+  background: #7d7e81;
+  width: 200px;
+  height: 200px;
+}
+
+.business {
+  width: 500px;
+  text-align: center;
+}
+
+.business li {
+  display: inline-block;
+  background: #c5c6c8;
 }
